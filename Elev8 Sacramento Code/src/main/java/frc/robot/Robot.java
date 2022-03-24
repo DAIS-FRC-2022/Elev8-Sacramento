@@ -37,7 +37,7 @@ public class Robot extends TimedRobot {
     m_robotContainer = new RobotContainer();
     CameraServer.startAutomaticCapture();
 
-    DriveSubsystem.navx.reset();
+    //DriveSubsystem.navx.reset();
   }
 
   /**
@@ -66,6 +66,7 @@ public class Robot extends TimedRobot {
   /** This function is called once each time the robot enters Disabled mode. */
   @Override
   public void disabledInit() {
+    //DriveSubsystem.navx.reset();
   }
 
   @Override
